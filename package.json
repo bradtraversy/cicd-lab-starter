@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test test/app.test.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "verify": "npm run typecheck && npm test && npm run build"
   },
   "keywords": [],
   "author": "",
